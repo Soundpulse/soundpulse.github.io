@@ -138,9 +138,9 @@ section:not(#sidebar) {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-webkit-animation: bgtrans 5s;
+	-webkit-animation: bgtrans 4s;
 	/* Chrome, Safari, Opera */
-	animation: bgtrans 5s;
+	animation: bgtrans 4s;
 }
 
 
