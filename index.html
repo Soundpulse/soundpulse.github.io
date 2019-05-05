@@ -7,11 +7,18 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<title>Portfolio | Toby Io</title>
-		<link rel="stylesheet" href="./css/style.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/owl.carousel.css">
+		<link rel="stylesheet" href="./css/owl.theme.default.css">
+
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="./js/script.js"></script>
+
 	</head>
 
 	<body>
@@ -33,12 +40,12 @@
 							</a>
 						</li>
 						<li>
-							<a href="#about">
+							<a href="#portfolio">
 								<i class="fas fa-archive fa-fw"></i> Portfolio
 							</a>
 						</li>
 						<li>
-							<a href="#about">
+							<a href="#resume">
 								<i class="fas fa-file-alt fa-fw"></i> Resume
 							</a>
 						</li>
@@ -77,6 +84,7 @@
 			</nav>
 			</div>
 		</section>
+
 		<section id="showcase">
 			<div class="container">
 
@@ -86,7 +94,7 @@
 					<br />
 					<span class="desc">Computer Scientist@NCL<span class="blinking-cursor">|</span></span>
 				</p>
-				
+
 				<button class="btn-resume">
         			<a href="./file/Curriclum_Vitae.pdf">View Resume</a>
       			</button>
@@ -99,7 +107,7 @@
 					<img src="images/avatar.jpg" alt="About Me" width="380" height="400" />
 				</div>
 				<article id="about-me">
-					<h1 class="page-title">ABOUT ME</h1>
+					<h2 class="title">ABOUT ME</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat modi fuga doloremque id, dolores tempora, rerum ducimus ipsum dolor explicabo blanditiis! Esse tempore, iure quibusdam aspernatur provident ducimus nesciunt?
 					</p>
@@ -112,8 +120,76 @@
 		</section>
 
 		<section id="resume">
-
+			<div class="timeline">
+				<div class="container left">
+					<div class="content">
+						<div class="text-box">
+							<h2>2018</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<img src="images/wallpaper.jpg" height="600" width="1000" />
+					</div>
+				</div>
+				<div class="container right">
+					<div class="content">
+						<div class="text-box">
+							<h2>2018</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat modi fuga doloremque id, dolores tempora, </p>
+						</div>
+						<img src="images/wallpaper.jpg" height="600" width="1000" />
+					</div>
+				</div>
+				<div class="container left">
+					<div class="content">
+						<div class="text-box">
+							<h2>2018</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat modi fuga doloremque id</p>
+						</div>
+						<img src="images/wallpaper.jpg" height="600" width="1000" />
+					</div>
+				</div>
+				<div class="container right">
+					<div class="content">
+						<div class="text-box">
+							<h2>2018</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat modi fuga doloremque id</p>
+						</div>
+						<img src="images/wallpaper.jpg" height="600" width="1000" />
+					</div>
+				</div>
+				
+				<a href="#">View More</a>
+			</div>
+			</div>
 		</section>
+
+		<section id="portfolio">
+			<div class="container">
+				<div class="owl-carousel">
+					<div><img src="images/article.png" height="300" width="200" /></div>
+					<div><img src="images/avatar.jpg" height="300" width="200" /></div>
+					<div><img src="images/article.png" height="300" width="200" /></div>
+					<div><img src="images/avatar.jpg" height="300" width="200" /></div>
+					<div><img src="images/article.png" height="300" width="200" /></div>
+					<div><img src="images/avatar.jpg" height="300" width="200" /></div>
+					<div><img src="images/article.png" height="300" width="200" /></div>
+					<div><img src="images/avatar.jpg" height="300" width="200" /></div>
+				</div>
+			</div>
+		</section>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".owl-carousel").owlCarousel({
+					items: 4,
+					lazyLoad: true,
+					loop: true,
+					margin: 30,
+					navigation: true
+				});
+			});
+		</script>
 
 		<section id="contact">
 			<div class="container">
@@ -169,40 +245,8 @@
 		</section>
 
 		<footer>
-			<div class="copyright">&copy; 2019 Copyrighted</div>
+			<div class="copyright">2019 Toby Io.</div>
 		</footer>
-
-		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-		<script src="js/owl.carousel.js"></script>
-		<script>
-			window.sr = ScrollReveal();
-
-			sr.reveal('#contact .container', {
-				duration: 2000,
-				origin: 'bottom'
-			});
-
-			sr.reveal('#about-me', {
-				duration: 2000,
-				origin: 'bottom'
-			});
-
-			sr.reveal('#side-details', {
-				duration: 2000,
-				origin: 'right'
-			});
-
-			$("#sidebar a").click(function(event) {
-
-				var target = $(this.getAttribute('href'));
-
-				event.preventDefault();
-
-				$('html, body').stop().animate({
-					scrollTop: target.offset().top
-				}, 350);
-			});
-		</script>
 	</body>
 
 </html>

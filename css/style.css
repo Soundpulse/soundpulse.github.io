@@ -10,11 +10,6 @@ html {
 	height: 100%;
 }
 
-.container {
-	margin: auto;
-	overflow: hidden;
-}
-
 ul {
 	margin: 0;
 	padding: 0;
@@ -175,7 +170,7 @@ section:not(#sidebar) {
 	position: relative;
 	color: #181818;
 	left: 7%;
-	top:20px;
+	top: 20px;
 	margin-bottom: 30px;
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
@@ -201,6 +196,10 @@ section:not(#sidebar) {
 
 #showcase .desc {
 	font-size: 50px;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
 }
 
 
@@ -208,7 +207,6 @@ section:not(#sidebar) {
 
 .blinking-cursor {
 	position: absolute;
-	right: -3%;
 	font-weight: 100;
 	font-size: 45px;
 	color: #2E3D48;
@@ -324,6 +322,7 @@ section:not(#sidebar) {
 /* About Me */
 
 #about .container {
+	margin: auto;
 	margin-top: 30px;
 	/* inline-block hack */
 	font-size: 0;
@@ -434,7 +433,137 @@ input[type=submit]:hover {
 }
 
 
-/*Footer*/
+/*Resume Timeline*/
+
+#resume {
+	margin-left: 20%;
+	margin-top: -250px;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+#resume .timeline {
+	position: relative;
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+#resume .timeline::after {
+	content: '';
+	position: absolute;
+	width: 3px;	
+	background-color: white;
+	top: 300px;
+	bottom: -550px;
+	left: 50%;
+	margin-left: -3px;
+}
+
+
+/* Container around content */
+
+#resume .container {
+	padding: 0px 20px;
+	position: relative;
+	background-color: inherit;
+	width: 40%;
+	height: 500px;
+}
+
+
+/* Place the container to the left */
+
+#resume .left {
+	left: -55%;
+}
+
+
+/* Place the container to the right */
+
+#resume .right {
+	left: 55%;
+}
+
+
+/* The actual content */
+
+#resume .content {
+	position: relative;
+}
+
+#resume .left .text-box{
+	position: relative;
+	width: 500px;
+	height: 400px;
+	left: 130%;
+	top: 400px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: right;
+	z-index: 1;
+	color: black;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+}
+
+#resume .right .text-box{
+	position: relative;
+	width: 500px;
+	height: 400px;
+	top: 400px;
+	right: 10%;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+	z-index: 1;
+	color: black;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+  	
+}
+
+#resume h2{
+	font-size: 10px;
+}
+
+#resume p{
+	font-size: 40px;
+	color:#2E3D48;
+	
+}
+
+#resume a{
+	position:relative;
+	font-size: 20px;
+	color:#2E3D48;
+	text-decoration: underline;
+	top:600px;
+	left: 45.75%;
+}
+
+/* Portfolio */
+
+#portfolio{
+	background-color: #181818;
+	padding-top: 10px;
+	margin-top: 800px;
+	padding-bottom: 35px;
+}
+
+#portfolio .container{
+	margin: auto;
+	margin-top: 30px;
+	/* inline-block hack */
+	font-size: 0;
+	text-align: center;
+	max-width: 1040px;
+}
+
+/* Footer */
 
 footer {
 	position: flex;
@@ -457,6 +586,38 @@ footer {
 		margin: 0 auto;
 		max-width: 80%;
 	}
+	
+	/* Place the timelime to the left */
+	#resume .timeline::after {
+		left: 60px;
+	}
+	/* Full-width containers */
+	#resume .container {
+		width: 75%;
+		padding-left: 70px;
+		padding-right: 25px;
+		left:42px;
+		margin: 180px 0px;
+	}
+	
+	#resume .right .text-box{
+		right: 35px;
+	}
+	
+	#resume .left .text-box{
+		left: -35px;
+		text-align: left;
+	}
+
+	#resume a{
+		left: 8.5%;
+		top: 550px;
+	}
+	/* Make all right containers behave like the left ones */
+	.right {
+		left: 0%;
+	}
+	
 }
 
 @media(max-width: 864px) {
@@ -480,16 +641,27 @@ footer {
 	#showcase p {
 		left: 7%;
 	}
-	
-	#showcase button{
-		position:absolute;
-		top:60%;
+	#showcase button {
+		position: absolute;
+		top: 60%;
 	}
-	
 	footer {
 		width: 100%;
 		margin-left: 0%;
 	}
+
+	#resume{
+		position:flex;
+		left:20%;
+	}
+
+	#resume .container{
+		left:32px;
+		width:70%;
+	}
 	
+	#resume .timeline::after {
+		left: 51px;
+	}
 
 }
