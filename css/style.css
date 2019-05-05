@@ -1,13 +1,3 @@
-:root:before {
-  content: url(../images/article.png)
-           url(../images/avatar.jpg)
-           url(../images/wallpaper.jpg);
-  /* partial fallback */
-  visibility: hidden;
-  position: absolute;
-  left: -999em;
-}
-
 body {
 	font: 15px/1.5 'Source Sans Pro', Helvetica, sans-serif;
 	padding: 0;
