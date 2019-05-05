@@ -1,8 +1,19 @@
+:root:before {
+  content: url(../images/article.png)
+           url(../images/avatar.jpg)
+           url(../images/wallpaper.jpg);
+  /* partial fallback */
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
 body {
 	font: 15px/1.5 'Source Sans Pro', Helvetica, sans-serif;
 	padding: 0;
 	margin: 0;
 	background-color: #ECECEC;
+	overflow-x: hidden;
 }
 
 body,
@@ -612,9 +623,6 @@ input[type=submit]:hover {
 	max-width: 900px;
 }
 
-#portfolio .box {
-}
-
 #portfolio .box img {
   opacity: 1;
   display: block;
@@ -657,10 +665,19 @@ footer {
 	height: 30px;
 	padding-top: 5px;
 	background-color: #353637;
-	text-align: center;
-	margin-left: 15%;
+	margin-left: 16%;
 }
 
+footer .copyright{
+	padding:0 30px 0 20px;
+	display: flex;
+  	justify-content: space-between;
+}
+
+footer .copyright a{
+	text-decoration: none;
+	color:#F5F5F5;
+}
 
 /* Small Screens Compatibility*/
 
