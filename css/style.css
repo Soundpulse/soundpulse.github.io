@@ -716,11 +716,9 @@ footer .copyright a {
 	}
 	#resume .right .text-box {
 		right: 35px;
-		width: 110%;
 	}
 	#resume .left .text-box {
 		left: -35px;
-		width: 110%;
 		text-align: left;
 	}
 	#resume a {
@@ -795,5 +793,12 @@ footer .copyright a {
 	}
 	#resume .timeline::after {
 		left: 51px;
+	}
+	
+	#resume .right .text-box {
+		width: 110%;
+	}
+	#resume .left .text-box {
+		width: 110%;
 	}
 }
