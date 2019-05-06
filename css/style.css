@@ -42,13 +42,9 @@ section:not(#sidebar) {
 	overflow-x: hidden;
 	padding: 20px 20px 0px 0px;
 	font-family: 'Montserrat', sans-serif;
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-animation: slideout 1.5s;
+	-webkit-animation: slideout 0.75s;
 	/* Chrome, Safari, Opera */
-	animation: slideout 1.5s;
+	animation: slideout 0.75s;
 }
 
 
@@ -134,9 +130,9 @@ section:not(#sidebar) {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-webkit-animation: bgtrans 4s;
+	-webkit-animation: bgtrans 1s;
 	/* Chrome, Safari, Opera */
-	animation: bgtrans 4s;
+	animation: bgtrans 1s;
 }
 
 
@@ -145,9 +141,11 @@ section:not(#sidebar) {
 @-webkit-keyframes bgtrans {
 	from {
 		opacity: 0;
+		filter: alpha(opacity=0);
 	}
 	to {
 		opacity: 1;
+		filter: alpha(opacity=1);
 	}
 }
 
@@ -157,9 +155,11 @@ section:not(#sidebar) {
 @keyframes bgtrans {
 	from {
 		opacity: 0;
+		filter: alpha(opacity=0);
 	}
 	to {
 		opacity: 1;
+		filter: alpha(opacity=1);
 	}
 }
 
@@ -173,10 +173,6 @@ section:not(#sidebar) {
 	left: 7%;
 	top: 20px;
 	margin-bottom: 30px;
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
 }
 
 #showcase br {
@@ -197,10 +193,6 @@ section:not(#sidebar) {
 
 #showcase .desc {
 	font-size: 50px;
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
 }
 
 
@@ -286,10 +278,6 @@ section:not(#sidebar) {
 	transition: all 0.5s;
 	cursor: pointer;
 	margin: 5px;
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
 }
 
 .btn-resume span {
@@ -305,6 +293,7 @@ section:not(#sidebar) {
 	content: '\00bb';
 	position: absolute;
 	opacity: 0;
+	filter: alpha(opacity=0);
 	top: 0;
 	right: -20px;
 	transition: 0.5s;
@@ -316,6 +305,7 @@ section:not(#sidebar) {
 
 .btn-resume:hover span:after {
 	opacity: 1;
+	filter: alpha(opacity=1);
 	right: 0;
 }
 
@@ -335,6 +325,18 @@ section:not(#sidebar) {
 	width: 35px;
 	height: 4px;
 	top: 5px;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.title:hover > .line{
+	width: 75px;
+}
+
+a:hover > .line{
+	width: 75px;
 }
 
 #resume .title {
@@ -372,10 +374,210 @@ section:not(#sidebar) {
 	max-width: 50%;
 }
 
+#about-me p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
 #side-details {
 	text-align: center;
 	vertical-align: top;
 	margin-top: 20px;
+}
+
+#side-details img{
+	border-radius: 20%;
+}
+
+
+/*Resume Timeline*/
+
+#resume {
+	margin-left: 20%;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+#resume .timeline {
+	position: relative;
+	max-width: 1040px;
+	margin: 0 auto;
+	margin-top: -350px;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+#resume .timeline::after {
+	content: '';
+	position: absolute;
+	width: 3px;
+	background-color: white;
+	top: 420px;
+	bottom: -550px;
+	left: 50%;
+	margin-left: -3px;
+}
+
+
+/* Container around content */
+
+#resume .container {
+	margin: auto;
+	margin-top: 30px;
+	/* inline-block hack */
+	font-size: 0;
+	text-align: center;
+	max-width: 900px;
+}
+
+#resume .box {
+	padding: 0px 20px;
+	position: relative;
+	background-color: inherit;
+	width: 40%;
+	height: 300px;
+}
+
+#resume .box::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+	z-index: 1;
+	top: 405px;
+}
+
+
+/* Place the container to the left */
+
+#resume .left {
+	left: -64%;
+}
+
+#resume .left::after {
+	left: 253.7%;
+}
+
+
+/* Place the container to the right */
+
+#resume .right {
+	left: 55%;
+}
+
+#resume .right::after {
+	left: -14.15%;
+}
+
+
+/* The actual content */
+
+#resume .content {
+	position: relative;
+}
+
+#resume .left .text-box {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	left: 130%;
+	top: 400px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: right;
+	z-index: 1;
+	color: black;
+}
+
+#resume .right .text-box {
+	position: relative;
+	width: 500px;
+	height: 400px;
+	top: 400px;
+	right: 10%;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: left;
+	z-index: 1;
+	color: black;
+}
+
+#resume p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	color: #2E3D48;
+}
+
+#resume a {
+	padding: 0px 20px;
+	background-color: inherit;
+	position: relative;
+	font-size: 20px;
+	color: #E25822;
+	text-decoration: none;
+	top: 620px;
+	left: -10px;
+}
+
+#resume a .line{
+	position:relative;
+	left:46.5%;
+	top: -1px;
+}
+
+/* Portfolio */
+
+#portfolio {
+	padding-top: 10px;
+	margin-top: 600px;
+	padding-bottom: 35px;
+}
+
+#portfolio .container {
+	margin: auto;
+	margin-top: 30px;
+	/* inline-block hack */
+	font-size: 0;
+	text-align: center;
+	max-width: 900px;
+}
+
+#portfolio .box img {
+	opacity: 1;
+	filter: alpha(opacity=1);
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+#portfolio .box .middle {
+	transition: .5s ease;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#portfolio .box:hover img {
+	opacity: 0.3;
+	filter: alpha(opacity=0.3);
+}
+
+#portfolio .box:hover .middle {
+	opacity: 1;
+	filter: alpha(opacity=1);
+}
+
+#portfolio .text {
+	color: black;
+	font-size: 16px;
+	padding: 16px 32px;
 }
 
 
@@ -390,6 +592,11 @@ section:not(#sidebar) {
 
 #contact .description {
 	margin-left: 15%;
+}
+
+#contact .info p{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 input[type=text],
@@ -462,186 +669,6 @@ input[type=submit]:hover {
 }
 
 
-/*Resume Timeline*/
-
-#resume {
-	margin-left: 20%;
-}
-
-
-/* The actual timeline (the vertical ruler) */
-
-#resume .timeline {
-	position: relative;
-	max-width: 1040px;
-	margin: 0 auto;
-	margin-top: -350px;
-}
-
-
-/* The actual timeline (the vertical ruler) */
-
-#resume .timeline::after {
-	content: '';
-	position: absolute;
-	width: 3px;
-	background-color: white;
-	top: 420px;
-	bottom: -550px;
-	left: 50%;
-	margin-left: -3px;
-}
-
-
-/* Container around content */
-
-#resume .container {
-	margin: auto;
-	margin-top: 30px;
-	/* inline-block hack */
-	font-size: 0;
-	text-align: center;
-	max-width: 900px;
-}
-
-#resume .box {
-	padding: 0px 20px;
-	position: relative;
-	background-color: inherit;
-	width: 40%;
-	height: 500px;
-}
-
-#resume .box::after {
-	content: '';
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	border-radius: 50%;
-	z-index: 1;
-	top: 405px;
-}
-
-
-/* Place the container to the left */
-
-#resume .left {
-	left: -64%;
-}
-
-#resume .left::after {
-	left: 253.7%;
-}
-
-
-/* Place the container to the right */
-
-#resume .right {
-	left: 55%;
-}
-
-#resume .right::after {
-	left: -14.15%;
-}
-
-
-/* The actual content */
-
-#resume .content {
-	position: relative;
-}
-
-#resume .left .text-box {
-	position: relative;
-	width: 500px;
-	height: 400px;
-	left: 130%;
-	top: 400px;
-	font-family: 'Source Sans Pro', sans-serif;
-	text-align: right;
-	z-index: 1;
-	color: black;
-}
-
-#resume .right .text-box {
-	position: relative;
-	width: 500px;
-	height: 400px;
-	top: 400px;
-	right: 10%;
-	font-family: 'Source Sans Pro', sans-serif;
-	text-align: left;
-	z-index: 1;
-	color: black;
-}
-
-#resume h2 {
-	font-size: 18px;
-}
-
-#resume p {
-	font-size: 24px;
-	color: #2E3D48;
-}
-
-#resume a {
-	position: relative;
-	font-size: 20px;
-	color: #2E3D48;
-	text-decoration: underline;
-	top: 600px;
-}
-
-
-/* Portfolio */
-
-#portfolio {
-	padding-top: 10px;
-	margin-top: 600px;
-	padding-bottom: 35px;
-}
-
-#portfolio .container {
-	margin: auto;
-	margin-top: 30px;
-	/* inline-block hack */
-	font-size: 0;
-	text-align: center;
-	max-width: 900px;
-}
-
-#portfolio .box img {
-	opacity: 1;
-	display: block;
-	transition: .5s ease;
-	backface-visibility: hidden;
-}
-
-#portfolio .box .middle {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-#portfolio .box:hover img {
-	opacity: 0.3;
-}
-
-#portfolio .box:hover .middle {
-	opacity: 1;
-}
-
-#portfolio .text {
-	color: black;
-	font-size: 16px;
-	padding: 16px 32px;
-}
 
 
 /* Footer */
@@ -682,7 +709,6 @@ footer .copyright a {
 	}
 
 	#resume .box {
-		width: 75%;
 		padding-left: 70px;
 		padding-right: 25px;
 		left: 42px;
@@ -690,15 +716,23 @@ footer .copyright a {
 	}
 	#resume .right .text-box {
 		right: 35px;
+		width: 110%;
 	}
 	#resume .left .text-box {
 		left: -35px;
+		width: 110%;
 		text-align: left;
 	}
 	#resume a {
-		left: -150px;
-		top: 550px;
+		position: absolute;
+		top: 2250px;
+		left: 45px;
 	}
+	
+	#resume a .line{
+		left: 0px;
+	}
+	
 	#resume .box::after {
 		left: 7.25px;
 	}
@@ -730,7 +764,12 @@ footer .copyright a {
 		padding: 20px;
 	}
 	#contact .info {
-		width: 44%;
+		margin-right: 0;
+		width: 46%;
+	}
+	
+	#contact .info p{
+		font-size: 13px;
 	}
 	#showcase .desc {
 		opacity: 0;

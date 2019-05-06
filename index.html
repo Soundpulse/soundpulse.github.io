@@ -15,12 +15,15 @@
 
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="http://mynameismatthieu.com/WOW/css/libs/animate.css">
 		<link rel="stylesheet" href="./css/owl.carousel.css">
 		<link rel="stylesheet" href="./css/owl.theme.default.css">
+		
 
-		<script src="https://unpkg.com/scrollreveal"></script>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
+		<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+		
 	</head>
 
 	<body>
@@ -104,16 +107,19 @@
 
 		<section id="about">
 			<div class="container">
-				<div id="side-details">
-					<img src="images/avatar.jpg" alt="About Me" width="380" height="400" />
+				<div id="side-details" class="wow swing center">
+					<img src="images/avatar.png" alt="About Me" width="360" height="340" />
 				</div>
-				<article id="about-me">
+				<article id="about-me" class="wow bounceInRight center">
 					<h2 class="title">ABOUT ME<span class="line"></span></h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat modi fuga doloremque id, dolores tempora, rerum ducimus ipsum dolor explicabo blanditiis! Esse tempore, iure quibusdam aspernatur provident ducimus nesciunt?
+						Welcome to my website! I’m a Computer Science Student in Newcastle University looking for new oppurtunities. 
 					</p>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, at, a. Tempora rerum excepturi quam accusantium labore? Hic alias ducimus, at reiciendis voluptatum, veritatis ipsum animi dolore dolorem dignissimos dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil porro ipsa, assumenda alias harum debitis ab, a, eligendi, fugiat voluptas consectetur. Placeat cumque autem nemo accusamus odio labore dolore, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quam odio porro quo beatae ipsam laboriosam ea optio, suscipit ut dolorum! Nisi eius fugiat fugit illo, obcaecati quo. Dicta, eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quam odio porro quo beatae ipsam laboriosam ea optio, suscipit ut dolorum! Nisi eius fugiat fugit illo, obcaecati quo. Dicta, eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quam odio porro quo beatae ipsam laboriosam ea optio, suscipit ut dolorum! Nisi eius fugiat fugit illo, obcaecati quo. Dicta, eaque.
+						The world can be an overwhelming place, so I thrive to make people's life simplier by harnessing the power of data science! &#128516
+					</p>
+					<p>
+						I take pleasure in cooking and listening to music, especially Jazz. I also like scuba-diving a lot if you can't tell from the picture. &#128523
 					</p>
 				</article>
 
@@ -122,51 +128,58 @@
 
 		<section id="resume">
 			<div class="container">
-				<h2 class="title">Resume<span class="line"></span></h2>
+				<h2 class="title wow bounceInLeft center">Hightlights<span class="line"></span></h2>
 				<div class="timeline">
-					<div class="box left">
+					<div data-wow-delay="0.75s" class="box right wow bounceInRight center">
 						<div class="content">
 							<div class="text-box">
-								<h2>2018</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<h2>2017-2020</h2>
+								<p>Newcastle University</p>
+								<p>Overall grade in 1st year: 1st<br />
+								   Overall grade in 2nd year: Expected 1st<br />
+								</p>
 							</div>
 						</div>
 					</div>
-					<div class="box right">
+					<div data-wow-delay="0.75s" class="box left wow bounceInLeft center">
 						<div class="content">
 							<div class="text-box">
-								<h2>2018</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat modi fuga doloremque id, dolores tempora, </p>
+								<h2>2019</h2>
+								<p>Student Ambassador</p>
+								<p>Representive of the Urban Science Building, Provide help on open day and introduce Newcastle University to prospect students.</p>
 							</div>
 						</div>
 					</div>
-					<div class="box left">
+					<div data-wow-delay="0.75s" class="box right wow bounceInRight center">
 						<div class="content">
 							<div class="text-box">
 								<h2>2018</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat modi fuga doloremque id</p>
+								<p>Workshop Facilitator</p>
+								<p>Hosted a workshop with Mr. Wild’s Year 10 GCSE computing students in North Tyneside to understand their thoughts and practices around data, safety and privacy online.</p>
+
 							</div>
 						</div>
 					</div>
-					<div class="box right">
+					<div data-wow-delay="0.75s" class="box left wow bounceInLeft center">
 						<div class="content">
 							<div class="text-box">
-								<h2>2018</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quaerat modi fuga doloremque id</p>
+								<h2>2017</h2>
+								<p>Mathematics Tutor</p>
+								<p>To aid students in advancing independently beyond their school grade level to higher levels and more difficult exercises.</p>
 							</div>
 						</div>
 					</div>
-					<a href="#">View More</a>
+					<a href="#" data-wow-delay="0.5s" class="wow bounceInDown center">View More<span class="line"></span></a>
 				</div>
 			</div>
 		</section>
 
 		<section id="portfolio">
 			<div class="container">
-				<h2 class="title">Portfolio<span class="line"></span></h2>
-				<div class="owl-carousel">
+				<h2 class="title wow bounceInLeft center">Portfolio<span class="line"></span></h2>
+				<div class="owl-carousel wow bounceInLeft center">
 					<div class="box">
-						<img src="images/article.png" alt="Portfolio 1" height="300" width="300" />
+						<img src="images/img-placeholder.jpg" alt="Portfolio 1" height="300" width="300" />
 						<div class="middle">
 							<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								<br />
@@ -175,7 +188,7 @@
 						</div>
 					</div>
 					<div class="box">
-						<img src="images/avatar.jpg" alt="Portfolio 2" height="300" width="300" />
+						<img src="images/img-placeholder.jpg" alt="Portfolio 2" height="300" width="300" />
 						<div class="middle">
 							<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								<br />
@@ -184,7 +197,7 @@
 						</div>
 					</div>
 					<div class="box">
-						<img src="images/article.png" alt="Portfolio 3" height="300" width="300" />
+						<img src="images/img-placeholder.jpg" alt="Portfolio 3" height="300" width="300" />
 						<div class="middle">
 							<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								<br />
@@ -193,7 +206,7 @@
 						</div>
 					</div>
 					<div class="box">
-						<img src="images/avatar.jpg" alt="Portfolio 4" height="300" width="300" />
+						<img src="images/img-placeholder.jpg" alt="Portfolio 4" height="300" width="300" />
 						<div class="middle">
 							<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								<br />
@@ -202,7 +215,7 @@
 						</div>
 					</div>
 					<div class="box">
-						<img src="images/avatar.jpg" alt="Portfolio 5" height="300" width="300" />
+						<img src="images/img-placeholder.jpg" alt="Portfolio 5" height="300" width="300" />
 						<div class="middle">
 							<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								<br />
@@ -211,7 +224,7 @@
 						</div>
 					</div>
 					<div class="box">
-						<img src="images/article.png" alt="Portfolio 6" height="300" />
+						<img src="images/img-placeholder.jpg" alt="Portfolio 6" height="300" />
 						<div class="middle">
 							<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								<br />
@@ -225,7 +238,7 @@
 
 		<section id="contact">
 			<div class="container">
-				<div class="form">
+				<div class="form wow bounceInLeft center">
 					<form action="action_page.php">
 						<input type="text" id="fname" name="firstname" placeholder="Name">
 						<br />
@@ -236,16 +249,16 @@
 						<input type="submit" value="Send">
 					</form>
 				</div>
-				<div class="info">
-					<h5>CONTACT</h5>
+				<div class="info wow bounceInRight center">
+					<h2>CONTACT</h2>
 					<p>
-						I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.
+						Apartment 9, Rehearsal Rooms<br /> Westgate Road 115-119<br /> Newcastle Upon Tyne, UK
 					</p>
 					<p>
-						Mail: a@b.com
+						<i class="fas fa-envelope"></i> &nbsp;&nbsp;toby.io@outlook.com
 					</p>
 					<p>
-						Tel: 0123456789
+						<i class="fas fa-phone"></i> &nbsp;&nbsp;(+44)74277 20256 <br />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+853) 6646 4282
 					</p>
 				</div>
 				<ul class="social-media-dark">
@@ -281,47 +294,7 @@
 		</footer>
 
 		<script>
-			window.sr = ScrollReveal();
-
-			sr.reveal('#about-me', {
-				duration: 2000,
-				origin: 'bottom'
-			});
-
-			sr.reveal('#side-details', {
-				duration: 2000,
-				origin: 'right'
-			});
-
-			sr.reveal('#resume .title', {
-				duration: 1000,
-				origin: 'bottom'
-			});
-
-			sr.reveal('#resume .timeline', {
-				duration: 500,
-				origin: 'right'
-			});
-
-			sr.reveal('#resume .container', {
-				duration: 3000,
-				origin: 'bottom'
-			}, 3000);
-
-			sr.reveal('#portfolio .title', {
-				duration: 1000,
-				origin: 'bottom'
-			});
-
-			sr.reveal('.owl-carousel', {
-				duration: 2000,
-				origin: 'right'
-			});
-
-			sr.reveal('#contact .container', {
-				duration: 4000,
-				origin: 'bottom'
-			});
+			new WOW().init();
 
 			$(document).ready(function() {
 				$(".owl-carousel").owlCarousel({
@@ -329,20 +302,21 @@
 					lazyLoad: true,
 					loop: true,
 					navigation: true,
-					autoplay:true,
-					autoplayHoverPause:true,
-					autoplayTimeout:3000,
-				    responsiveClass:true,
-				    responsive:{
-				        0:{
-				            items:1
-				        },
-				        1120:{
-				            items:3
-				        }
-				    }
+					autoplay: true,
+					autoplayHoverPause: true,
+					autoplayTimeout: 3000,
+					responsiveClass: true,
+					responsive: {
+						0: {
+							items: 1
+						},
+						1120: {
+							items: 3
+						}
+					}
 				});
 			});
+			
 		</script>
 
 	</body>
