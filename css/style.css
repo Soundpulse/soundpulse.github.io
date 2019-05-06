@@ -80,7 +80,7 @@ section:not(#sidebar) {
 	margin-top: 6px;
 	text-decoration: none;
 	font-size: 13px;
-	color: #212121;
+	color: #3D3F40;
 	display: block;
 }
 
@@ -91,7 +91,7 @@ section:not(#sidebar) {
 #sidebar #branding {
 	margin: auto;
 	text-align: center;
-	color: #181818;
+	color: #3D3F40;
 	margin-bottom: 40px;
 }
 
@@ -268,7 +268,7 @@ section:not(#sidebar) {
 	top: 46%;
 	left: 7%;
 	border-radius: 8px;
-	background-color: #e25822;
+	background-color: #9e8875;
 	border: none;
 	text-align: center;
 	font-size: 28px;
@@ -313,7 +313,7 @@ section:not(#sidebar) {
 /* Headers */
 
 .title {
-	color: #E25822;
+	color: #9e8875;
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -321,7 +321,7 @@ section:not(#sidebar) {
 .line {
 	display: block;
 	position: relative;
-	background-color: #E25822;
+	background-color: #9e8875;
 	width: 35px;
 	height: 4px;
 	top: 5px;
@@ -331,11 +331,11 @@ section:not(#sidebar) {
 	transition-duration: 0.3s;
 }
 
-.title:hover > .line{
+.title:hover>.line {
 	width: 75px;
 }
 
-a:hover > .line{
+a:hover>.line {
 	width: 75px;
 }
 
@@ -374,7 +374,7 @@ a:hover > .line{
 	max-width: 50%;
 }
 
-#about-me p{
+#about-me p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 }
@@ -383,9 +383,10 @@ a:hover > .line{
 	text-align: center;
 	vertical-align: top;
 	margin-top: 20px;
+	border-radius: 20%;
 }
 
-#side-details img{
+#side-details img {
 	border-radius: 20%;
 }
 
@@ -489,7 +490,6 @@ a:hover > .line{
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: right;
 	z-index: 1;
-	color: black;
 }
 
 #resume .right .text-box {
@@ -501,13 +501,12 @@ a:hover > .line{
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: left;
 	z-index: 1;
-	color: black;
 }
 
 #resume p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
-	color: #2E3D48;
+	color: #3D3F40;
 }
 
 #resume a {
@@ -515,17 +514,25 @@ a:hover > .line{
 	background-color: inherit;
 	position: relative;
 	font-size: 20px;
-	color: #E25822;
+	color: #3D3F40;
 	text-decoration: none;
 	top: 620px;
 	left: -10px;
 }
 
-#resume a .line{
-	position:relative;
-	left:46.5%;
+#resume a .line {
+	position: relative;
+	left: 46.5%;
+	background-color: #3D3F40;
 	top: -1px;
 }
+
+#resume h2 {
+	font-size: 18px;
+	color:#87837E;
+}
+
+
 
 /* Portfolio */
 
@@ -594,7 +601,7 @@ a:hover > .line{
 	margin-left: 15%;
 }
 
-#contact .info p{
+#contact .info p {
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -669,8 +676,6 @@ input[type=submit]:hover {
 }
 
 
-
-
 /* Footer */
 
 footer {
@@ -707,7 +712,6 @@ footer .copyright a {
 	#resume .timeline::after {
 		left: 60px;
 	}
-
 	#resume .box {
 		padding-left: 70px;
 		padding-right: 25px;
@@ -726,16 +730,14 @@ footer .copyright a {
 		top: 2250px;
 		left: 45px;
 	}
-	
-	#resume a .line{
+	#resume a .line {
 		left: 0px;
 	}
-	
 	#resume .box::after {
 		left: 7.25px;
 	}
 	#resume .title {
-		position:relative;
+		position: relative;
 		left: 70px;
 		top: 180px;
 		margin-top: 50px;
@@ -765,8 +767,7 @@ footer .copyright a {
 		margin-right: 0;
 		width: 46%;
 	}
-	
-	#contact .info p{
+	#contact .info p {
 		font-size: 13px;
 	}
 	#showcase .desc {
@@ -794,7 +795,6 @@ footer .copyright a {
 	#resume .timeline::after {
 		left: 51px;
 	}
-	
 	#resume .right .text-box {
 		width: 110%;
 	}
