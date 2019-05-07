@@ -1,5 +1,5 @@
 body {
-	font: 15px/1.5 'Source Sans Pro', Helvetica, sans-serif;
+	font: 15px/1.5 'Montserrat', Helvetica, sans-serif;
 	padding: 0;
 	margin: 0;
 	background-color: #ECECEC;
@@ -41,7 +41,6 @@ section:not(#sidebar) {
 	background-color: #f6f6f6;
 	overflow-x: hidden;
 	padding: 20px 20px 0px 0px;
-	font-family: 'Montserrat', sans-serif;
 	-webkit-animation: slideout 0.75s;
 	/* Chrome, Safari, Opera */
 	animation: slideout 0.75s;
@@ -125,7 +124,6 @@ section:not(#sidebar) {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #ffffff;
-	font-family: 'Montserrat', sans-serif;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -187,7 +185,6 @@ section:not(#sidebar) {
 
 #showcase .name {
 	font-size: 75px;
-	font-family: 'Frank Ruhl Libre', serif;
 	top: 10%
 }
 
@@ -272,7 +269,6 @@ section:not(#sidebar) {
 	border: none;
 	text-align: center;
 	font-size: 28px;
-	font-family: 'Montserrat', sans-serif;
 	padding: 20px;
 	width: 255px;
 	transition: all 0.5s;
@@ -287,6 +283,7 @@ section:not(#sidebar) {
 	transition: 0.5s;
 	text-decoration: none;
 	color: #FFFFFF;
+	font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 .btn-resume span:after {
@@ -375,7 +372,6 @@ a:hover>.line {
 }
 
 #about-me p {
-	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 }
 
@@ -504,7 +500,6 @@ a:hover>.line {
 }
 
 #resume p {
-	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	color: #3D3F40;
 }
@@ -603,7 +598,6 @@ a:hover>.line {
 
 #contact .info p {
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
 }
 
 input[type=text],
