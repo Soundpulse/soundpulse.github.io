@@ -750,7 +750,8 @@ footer .copyright a {
 
 @media(max-width: 864px) {
 	#sidebar {
-		display: none;
+		left: 70%;
+		width:30%;
 	}
 	section:not(#sidebar) {
 		margin-left: 0;
