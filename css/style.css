@@ -743,7 +743,7 @@ footer .copyright a {
 
 @media only screen and (max-width: 864px) {
 	body{
-		width: 100%;
+		background-color:hotpink;
 	}
 }
 
