@@ -116,7 +116,6 @@ section:not(#sidebar) {
 /* Showcase */
 
 #showcase {
-	margin-left: 15%;
 	height: 100%;
 	background-image: url('../images/wallpaper.jpg');
 	background-position: center;
@@ -744,9 +743,14 @@ footer .copyright a {
 }
 
 @media(max-width: 864px) {
+	
+	body{
+		background-color:red;
+	}
 
 	section:not(#sidebar) {
 		margin-left: 0;
+		background-color:yellow;
 	}
 	#sidebar{
 		display: none;
