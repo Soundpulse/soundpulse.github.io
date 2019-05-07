@@ -332,9 +332,7 @@ section:not(#sidebar) {
 	width: 75px;
 }
 
-a:hover>.line {
-	width: 75px;
-}
+
 
 #resume .title {
 	margin-top: 100px;
@@ -517,9 +515,13 @@ a:hover>.line {
 
 #resume a .line {
 	position: relative;
-	left: 46.5%;
+	left: 45.5%;
 	background-color: #3D3F40;
 	top: -1px;
+}
+
+#resume a:hover>.line {
+	width: 75px;
 }
 
 #resume h2 {
