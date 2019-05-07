@@ -3,7 +3,6 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #ECECEC;
-	overflow-x: hidden;
 }
 
 body,
@@ -750,14 +749,12 @@ footer .copyright a {
 
 @media(max-width: 864px) {
 	#sidebar {
-		left: 70%;
-		width:30%;
+		display: none;
 	}
 	section:not(#sidebar) {
 		margin-left: 0;
 	}
 	#contact .container {
-		width: 80%;
 		padding: 20px;
 	}
 	#contact .info {
