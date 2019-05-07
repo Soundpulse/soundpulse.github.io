@@ -116,10 +116,10 @@
 						Welcome to my website! I’m a Computer Science Student in Newcastle University looking for new oppurtunities. 
 					</p>
 					<p>
-						The world can be an overwhelming place, so I thrive to make people's life simplier by harnessing the power of data science! &#128516
+						The world can be an overwhelming place, so I thrive to make people's life simplier by harnessing the power of data science!
 					</p>
 					<p>
-						I take pleasure in cooking and listening to music, especially Jazz. I also like scuba-diving a lot if you can't tell from the picture. &#128523
+						I take pleasure in cooking and listening to music, especially Jazz. I also like scuba-diving a lot if you can't tell from the picture.
 					</p>
 				</article>
 
@@ -294,7 +294,11 @@
 		</footer>
 
 		<script>
-			new WOW().init();
+			wow = new WOW({
+				mobile:false;
+			})
+			wow().init();
+			
 
 			$(document).ready(function() {
 				$(".owl-carousel").owlCarousel({
