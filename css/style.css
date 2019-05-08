@@ -20,13 +20,17 @@ i {
 }
 
 section:not(#sidebar) {
-	margin-left: 15%;
+	margin-left: auto;
+	width: calc((100% - 15%) - 20px);
 	-webkit-transition-duration: 0.3s;
 	-moz-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 	transition-duration: 0.3s;
 }
 
+.container{
+	overflow: hidden;
+}
 
 /* #sidebar */
 
@@ -384,6 +388,7 @@ section:not(#sidebar) {
 
 #resume {
 	margin-left: 20%;
+	overflow-x: hidden;
 }
 
 
@@ -641,6 +646,7 @@ input[type=submit]:hover {
 #contact .container {
 	background-color: #353637;
 	padding-bottom: 10px;
+	padding: 50px;
 	margin: auto;
 	width: 80%;
 	max-width: 1040px;
@@ -671,8 +677,8 @@ footer {
 	bottom: 0px;
 	width: 85%;
 	color: #F5F5F5;
-	height: 30px;
-	padding-top: 5px;
+	height: auto;
+	padding: 5px 0px;
 	background-color: #353637;
 	margin-left: 16%;
 }
@@ -686,12 +692,14 @@ footer .copyright {
 footer .copyright a {
 	text-decoration: none;
 	color: #F5F5F5;
+	text-align: right;
 }
 
 
 /* Small Screens Compatibility*/
 
 @media(max-width: 1120px) {
+	
 	#about-me {
 		display: block;
 		margin: 0 auto;
@@ -740,18 +748,15 @@ footer .copyright a {
 	}
 }
 
-@media only screen and (max-width: 864px) {
-	body{
-		background-color:hotpink;
-	}
-}
-
 
 @media(max-width: 864px) {
 
 	section:not(#sidebar) {
 		margin-left: 0;
+		max-width: 100%;
+		width: 100%;
 	}
+
 	#sidebar{
 		display: none;
 	}
