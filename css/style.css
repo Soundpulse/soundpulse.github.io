@@ -751,6 +751,7 @@ footer .copyright a {
 		max-width: 300px;
 		margin-left: 10%;
 	}
+
 }
 
 
@@ -812,5 +813,8 @@ footer .copyright a {
 	}
 	#resume .left .text-box {
 		width: 110%;
+	}
+	footer .copyright a {
+		display:none;
 	}
 }
