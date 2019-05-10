@@ -399,6 +399,7 @@ section:not(#sidebar) {
 	max-width: 1040px;
 	margin: 0 auto;
 	margin-top: -350px;
+	height:auto;
 }
 
 
@@ -425,6 +426,7 @@ section:not(#sidebar) {
 	font-size: 0;
 	text-align: center;
 	max-width: 900px;
+	height: 1750px;
 }
 
 #resume .box {
@@ -534,7 +536,6 @@ section:not(#sidebar) {
 
 #portfolio {
 	padding-top: 10px;
-	margin-top: 600px;
 	padding-bottom: 35px;
 }
 
@@ -705,6 +706,10 @@ footer .copyright a {
 		margin: 0 auto;
 		max-width: 80%;
 	}
+	#resume .container{
+		height: 2250px;
+	}
+	
 	#resume .timeline::after {
 		left: 60px;
 	}
@@ -763,9 +768,16 @@ footer .copyright a {
 	#contact .container {
 		padding: 20px;
 	}
+	#contact .form{
+		margin-top: 2%;
+		margin-left: 10%;
+		width:80%;
+		margin-right:10%;
+	}
 	#contact .info {
-		margin-right: 0;
-		width: 46%;
+		margin-left: 10%;
+		width: 50%;
+		
 	}
 	#contact .info p {
 		font-size: 13px;
