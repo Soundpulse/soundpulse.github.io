@@ -164,7 +164,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="#" data-wow-delay="0.5s" class="wow bounceInDown center">View More<span class="line"></span></a>
+					<a href="#" data-wow-delay="0.25s" class="wow bounceInDown center">View More<span class="line"></span></a>
 				</div>
 			</div>
 		</section>
@@ -291,9 +291,15 @@
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+		<script src="js/jquery.localscroll.js" type="text/javascript"></script> 
+		<script src="js/jquery.scrollTo.js" type="text/javascript"></script>
+	
 		<script>
 			new WOW({mobile:false}).init();
 			
+			$(document).ready(function() {
+   				$('#sidebar .navbar').localScroll({duration:800});
+			});
 
 			$(document).ready(function() {
 				$(".owl-carousel").owlCarousel({
