@@ -6,9 +6,7 @@ $(document).ready(function() {
 	$('#sidebar .navbar').localScroll({
 		duration: 800
 	});
-});
-
-$(document).ready(function() {
+	
 	$(".owl-carousel").owlCarousel({
 		items: 3,
 		lazyLoad: true,
