@@ -398,7 +398,6 @@ section:not(#sidebar) {
 	position: relative;
 	max-width: 1040px;
 	margin: 0 auto;
-	margin-top: -350px;
 	height:auto;
 }
 
@@ -410,8 +409,8 @@ section:not(#sidebar) {
 	position: absolute;
 	width: 3px;
 	background-color: white;
-	top: 420px;
-	bottom: -550px;
+	top: 0px;
+	bottom: 0px;
 	left: 50%;
 	margin-left: -3px;
 }
@@ -426,7 +425,7 @@ section:not(#sidebar) {
 	font-size: 0;
 	text-align: center;
 	max-width: 900px;
-	height: 1750px;
+	height: 1550px;
 }
 
 #resume .box {
@@ -445,7 +444,7 @@ section:not(#sidebar) {
 	background-color: white;
 	border-radius: 50%;
 	z-index: 1;
-	top: 405px;
+	top: 0px;
 }
 
 
@@ -482,7 +481,6 @@ section:not(#sidebar) {
 	width: 500px;
 	height: 400px;
 	left: 130%;
-	top: 400px;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: right;
 	z-index: 1;
@@ -492,7 +490,6 @@ section:not(#sidebar) {
 	position: relative;
 	width: 500px;
 	height: 400px;
-	top: 400px;
 	right: 10%;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align: left;
@@ -511,7 +508,7 @@ section:not(#sidebar) {
 	font-size: 20px;
 	color: #3D3F40;
 	text-decoration: none;
-	top: 620px;
+	top: 75px;
 	left: -10px;
 }
 
@@ -715,12 +712,12 @@ input[type=submit]:hover {
 
 footer {
 	bottom: 0px;
-	width: 85%;
+	width: auto;
 	color: #F5F5F5;
 	height: auto;
 	padding: 5px 0px;
 	background-color: #353637;
-	margin-left: 16%;
+	margin-left: 15.8%;
 }
 
 footer .copyright {
@@ -746,7 +743,7 @@ footer .copyright a {
 		max-width: 80%;
 	}
 	#resume .container{
-		height: 2250px;
+		height: 2100px;
 	}
 	
 	#resume .timeline::after {
@@ -758,17 +755,20 @@ footer .copyright a {
 		left: 42px;
 		margin: 180px 0px;
 	}
+	
 	#resume .right .text-box {
 		right: 35px;
+		height: 300px;
 	}
 	#resume .left .text-box {
 		left: -35px;
+		height: 300px;
 		text-align: left;
 	}
 	#resume a {
 		position: absolute;
-		top: 2250px;
-		left: 45px;
+		top: 1770px;
+		left: 40px;
 	}
 	#resume a .line {
 		left: 0px;
@@ -778,8 +778,8 @@ footer .copyright a {
 	}
 	#resume .title {
 		position: relative;
-		left: 70px;
-		top: 180px;
+		left: 50px;
+		top: 100px;
 		margin-top: 50px;
 	}
 	/* Make all right containers behave like the left ones */
