@@ -566,8 +566,8 @@ section:not(#sidebar) {
 }
 
 #portfolio .box:hover img {
-	opacity: 0.3;
-	filter: alpha(opacity=0.3);
+	opacity: 0.2;
+	filter: alpha(opacity=0.2);
 }
 
 #portfolio .box:hover .middle {
@@ -578,7 +578,8 @@ section:not(#sidebar) {
 #portfolio .text {
 	color: black;
 	font-size: 16px;
-	padding: 16px 32px;
+	 font-weight: bold;
+	padding: 0px 0px;
 }
 
 /*Projects*/
