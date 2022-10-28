@@ -451,11 +451,11 @@ section:not(#sidebar) {
 /* Place the container to the left */
 
 #resume .left {
-	left: -64%;
+	left: -54%;
 }
 
 #resume .left::after {
-	left: 253.7%;
+	left: 231.2%;
 }
 
 
@@ -478,7 +478,7 @@ section:not(#sidebar) {
 
 #resume .left .text-box {
 	position: relative;
-	width: 500px;
+	width: 400px;
 	height: 400px;
 	left: 130%;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -488,7 +488,7 @@ section:not(#sidebar) {
 
 #resume .right .text-box {
 	position: relative;
-	width: 500px;
+	width: 400px;
 	height: 400px;
 	right: 10%;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -742,8 +742,20 @@ footer .copyright a {
 		margin: 0 auto;
 		max-width: 80%;
 	}
+	
+	#about-me p {
+		font-size: 16px;
+	}
 	#resume .container{
-		height: 2100px;
+		height: auto;
+	}
+	
+	#resume .text-box p{
+		font-size: 18px;
+	}
+	
+	#resume .timeline{
+		margin-top: 0px;
 	}
 	
 	#resume .timeline::after {
@@ -753,22 +765,24 @@ footer .copyright a {
 		padding-left: 70px;
 		padding-right: 25px;
 		left: 42px;
-		margin: 180px 0px;
+		margin: 50px 0px;
 	}
 	
 	#resume .right .text-box {
 		right: 35px;
-		height: 300px;
+		height: 200px;
+		font-size: 12px;
 	}
 	#resume .left .text-box {
 		left: -35px;
-		height: 300px;
+		height: 200px;
+		font-size: 12px;
 		text-align: left;
 	}
 	#resume a {
 		position: absolute;
-		top: 1770px;
-		left: 40px;
+		top: 1320px;
+		left: 60px;
 	}
 	#resume a .line {
 		left: 0px;
@@ -779,8 +793,8 @@ footer .copyright a {
 	#resume .title {
 		position: relative;
 		left: 50px;
-		top: 100px;
-		margin-top: 50px;
+		top: 30px;
+		margin-top: 0px;
 	}
 	/* Make all right containers behave like the left ones */
 	.right {
@@ -819,6 +833,13 @@ footer .copyright a {
 		width: 80%;
 		
 	}
+	
+	#resume a {
+		position: absolute;
+		top: 1320px;
+		left: 50px;
+	}
+	
 	#contact .info p {
 		font-size: 13px;
 	}
@@ -853,6 +874,11 @@ footer .copyright a {
 	#resume .left .text-box {
 		width: 110%;
 	}
+	
+	#resume .title {
+		left: 40px;
+	}
+
 	footer .copyright a {
 		display:none;
 	}
